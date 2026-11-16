@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pos-homework"
+version = "1.0.0"
+description = "Консольный модуль преподавательской оценки студентов"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pos = "pos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pos*"]
